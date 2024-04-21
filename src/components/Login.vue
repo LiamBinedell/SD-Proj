@@ -44,6 +44,11 @@
           <router-link to="/signup">Sign Up</router-link>
         </p>
       </form>
+      <div class="goes-home">
+        <button class="home-btn">
+          <router-link to="/" class="home">Home</router-link>
+        </button>
+      </div>
     </div>
   </template>
   
@@ -98,9 +103,81 @@
   }
   .login-container {
     background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #001d3dd3;
     text-align: center;
+    margin-top: 10px;
   }
- 
-  
-  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #6cb4ee;
+    border-radius: 3px;
+    font-size: 15px;
+  }
+  .notice {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: red;
+  }
+  .login-btn {
+    width: 30%;
+    padding: 10px;
+    background-color: #01264e;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .login-btn:hover {
+    background-color: #0056b3;
+    text-decoration: underline;
+  }
+  .login-btn:active {
+    background-color: #0056b3;
+    transform: translateY(1px);
+  }
+  .sign-up-paragraph {
+    display: block;
+    color: blue;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .home-btn {
+    width: 40%;
+    padding: 10px;
+    background-color: #004225;
+    color: #fff;
+    margin-top: 50px;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .home-btn:hover {
+    background-color: #00693e;
+    text-decoration: underline;
+  }
+  .home-btn:active {
+    background-color: #00693e;
+    transform: translateY(3px);
+  }
+  .home {
+    color: white;
+  }
+  .goes-home {
+    display: flex;
+    justify-content: start;
+  }
   </style>
